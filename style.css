@@ -27,6 +27,8 @@ body{
 }
 .plain{
 color: #E6E6CC;
+font-size: 30px;
+margin-left: 5px;
 transform: rotate(-30deg);
 }
 h2{
@@ -66,7 +68,10 @@ margin-left: 53px;
   }
   .eco{
     color: #41261B;
+    font-size: 60px;
+    margin-left: 5px;
   }
+  
   .the{
     width:50px ;
     height: 30px;
