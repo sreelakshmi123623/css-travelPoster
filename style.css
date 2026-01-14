@@ -1,11 +1,18 @@
 *{
-    margin: 0;
+    box-sizing:border-box;
+}
+img{
+  max-width:100%;
+  height: auto;
 }
 body{
     width: 100%;
 }
 .navbar{
-    height: 80px;
+    height: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
     width: 100%;
     color: white;
     background-color:#41261B ;
@@ -27,13 +34,13 @@ h2{
 }
 .pagebody{
  width: 100%;
- height: 800px;  
+ min-height: 800px;  
  background-color:#E6E6CC;
  display: flex;
- justify-content: space-between;
+ flex-wrap: wrap;
 }
 .pagecontent{
-  width: 35%;
+  width: 50%;
   min-height:600px;  
   /* font-weight: 5px; */
   /* background-color: #673d3c; */
@@ -145,7 +152,7 @@ img{
 
  .footer{
     width: 100%;
-    height: 80px;
+    min-height:auto;
     color: white;
     text-align: center;
     padding:15px;
@@ -156,6 +163,75 @@ img{
     text-decoration: none;
  }
  
+
+ /* in small device */
+@media (max-width: 576px){
+
+  .navbar{
+    flex-direction: column;
+    text-align:center;
+  }
+
+  .pagebody{
+    flex-direction: column;
+  }
+
+  .pagecontent,
+  .rightsection{
+    width:100%;
+  }
+
+  .paragraph{
+    height:auto;
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+  .button{
+    width:100%;
+    margin-left:0;
+  }
+
+  .pic, .pic1, .pic2{
+    position: static;
+    width:90%;
+    margin:10px auto;
+  }
+}
+
+/* in mediumm devices */
+
+@media (min-width: 577px) and (max-width: 992px){
+
+  .pagecontent{
+    width:60%;
+  }
+
+  .rightsection{
+    width:40%;
+  }
+
+  .paragraph{
+    height:auto;
+  }
+}
+
+
+/* in large device */
+
+@media (min-width: 993px){
+  .pagecontent{
+    width:35%;
+  }
+
+  .rightsection{
+    width:50%;
+  }
+}
+
+
+
+
  /* .pageh11{
     margin-left: 35px;
     padding-top: 25px;
